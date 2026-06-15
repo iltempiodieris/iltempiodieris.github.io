@@ -3,91 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Tempio di Eris — Enclave Gastronomica</title>
+    <title>**** COMMODORE 64 BASIC V2 ****</title>
     
-    <!-- Meta Tag SEO per farsi trovare su Google -->
+    <!-- Meta Tag SEO - Il Tempio di Eris -->
     <meta name="description" content="Il Tempio di Eris: 23 coperti intimi nel borgo medievale di Vairano Patenora. Cucina a ciclo solare unico, vinili e disconnessione. Se hai fretta, non siamo il posto per te.">
     <meta name="keywords" content="Il Tempio di Eris, ristorante Vairano Patenora, pizzerie Caianello, ristorante intimo Caserta, mangiare borgo medievale, cucina espressa alto casertano">
     <meta name="robots" content="index, follow">
 
-    <!-- Anteprima Elegante per WhatsApp -->
-    <meta property="og:title" content="Il Tempio di Eris — 23 Coperti">
+    <!-- Anteprima per WhatsApp -->
+    <meta property="og:title" content="Il Tempio di Eris — Enclave Gastronomica">
     <meta property="og:description" content="Cibo vero. Zero schermi. Se accetti il nostro caos, sei ammesso.">
-    <meta property="og:url" content="https://iltempiodieris.github.io/">
+    <meta property="og:url" content="https://github.io">
     <meta property="og:type" content="website">
 
     <style>
         body {
-            background-color: #0d0d0d; /* Nero profondo della notte */
-            color: #e6dfd3; /* Crema/Oro opaco, elegante e riposante */
+            background-color: #4040E0; /* Blu esterno C64 */
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            font-family: 'Georgia', 'Times New Roman', serif; /* Font classico, monumentale */
-            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            overflow: hidden;
         }
-        .container {
-            width: 85vw;
-            max-width: 600px;
-            padding: 40px 20px;
-        }
-        h1 {
-            font-size: 28px;
-            letter-spacing: 4px;
+        .screen {
+            background-color: #2020A0; /* Blu interno C64 */
+            width: 90vw;
+            max-width: 640px;
+            height: 85vh;
+            max-height: 450px;
+            padding: 25px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            color: #A0A0FF; /* Colore testo C64 */
+            font-size: 15px;
+            line-height: 1.6;
+            font-weight: bold;
             text-transform: uppercase;
-            font-weight: 300;
-            margin-bottom: 40px;
-            color: #ffffff;
+            position: relative;
+            box-sizing: border-box;
         }
-        p {
-            font-size: 16px;
-            line-height: 1.8;
-            letter-spacing: 1px;
-            margin-bottom: 25px;
-            font-style: italic;
+        .cursor {
+            background-color: #A0A0FF;
+            animation: blink 1s infinite;
+            display: inline-block;
+            width: 10px;
+            height: 15px;
+            vertical-align: middle;
         }
-        .divider {
-            height: 1px;
-            width: 60px;
-            background-color: #e6dfd3;
-            margin: 40px auto;
-            opacity: 0.5;
+        @keyframes blink {
+            0%, 49% { background-color: #A0A0FF; }
+            50%, 100% { background-color: transparent; }
         }
         a {
-            color: #ffffff;
-            text-decoration: none;
-            border-bottom: 1px dashed #e6dfd3;
-            padding-bottom: 4px;
-            font-style: normal;
-            font-weight: bold;
-            letter-spacing: 2px;
-            transition: all 0.3s ease;
+            color: #FFFFFF;
+            text-decoration: underline;
+            cursor: pointer;
         }
-        a:hover {
-            color: #e6dfd3;
-            border-bottom: 1px solid #ffffff;
+        .cta {
+            margin-top: 25px;
+            display: block;
+            color: #A0A0FF;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Il Tempio di Eris</h1>
-    
-    <p>Aboliamo il menù cartaceo. Cuciniamo a ciclo solare unico: iniziamo la mattina con quello che la terra offre per portarvi in tavola la sera un percorso dove l'anima del mare sposa i profumi dell'entroterra.</p>
-    
-    <p>Un simposio intimo per soli 23 ospiti, nel silenzio del borgo antico.</p>
-    
-    <div class="divider"></div>
-    
-    <p>Da noi si viene per staccare il telefono, ascoltare un vinile e accettare il caos. Se hai fretta, non siamo il posto per te.</p>
-    
-    <p style="margin-top: 50px;">
-        <a href="https://wa.me.">CHIEDI L'AMMISSIONE AL TAVOLO</a>
-    </p>
+<div class="screen">
+    **** IL TEMPIO DI ERIS — ENCLAVE GASTRONOMICA ****<br>
+    64K RAM SYSTEM  38911 BASIC BYTES FREE<br>
+    <br>
+    READY.<br>
+    10 ABOLIAMO IL MENÙ CARTACEO.<br>
+    20 CUCINIAMO A CICLO SOLARE UNICO: DALLA MATTINA ALLA SERA.<br>
+    30 UN SIMPOSIO INTIMO PER SOLI 23 OSPITI NEL BORGO ANTICO.<br>
+    40 DA NOI SI VIENE PER STACCARE IL TELEFONO E ASCOLTARE UN VINILE.<br>
+    50 SE ACCETTI IL NOSTRO CAOS, SEI AMMESSO.<br>
+    60 SE HAI FRETTA, NON SIAMO IL POSTO PER TE.<br>
+    <br>
+    READY.<br>
+    RUN<br>
+    <br>
+    <span class="cta">PER CHIEDERE L'AMMISSIONE AL TAVOLO: <a href="https://wa.me.">CLICCA QUI E BUSSA SU WHATSAPP</a></span><br>
+    <br>
+    READY.<br>
+    <span class="cursor"></span>
 </div>
 
 </body>
