@@ -3,99 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Tempio di Eris — Enclave Gastronomica</title>
+    <title>Il Tempio di Eris — Vairano Patenora</title>
     
     <!-- Meta Tag SEO - Il Tempio di Eris -->
-    <meta name="description" content="Il Tempio di Eris: 23 coperti intimi nel borgo medievale di Vairano Patenora. Cucina a ciclo solare unico, vinili e disconnessione. Se hai fretta, non siamo il posto per te.">
+    <meta name="description" content="Il Tempio di Eris: 23 coperti intimi nel borgo medievale di Vairano Patenora. Cucina fresca della mattina, vinili e convivialità reale. Se hai fretta, non siamo il posto per te.">
     <meta name="keywords" content="Il Tempio di Eris, ristorante Vairano Patenora, pizzerie Caianello, ristorante intimo Caserta, mangiare borgo medievale, cucina espressa alto casertano">
     <meta name="robots" content="index, follow">
 
-    <!-- Anteprima per WhatsApp -->
-    <meta property="og:title" content="Il Tempio di Eris — Enclave Gastronomica">
-    <meta property="og:description" content="Cibo vero. Zero schermi. Se accetti il nostro caos, sei ammesso.">
-    <meta property="og:url" content="https://iltempiodieris.github.io/">
+    <!-- Anteprima per WhatsApp e Social -->
+    <meta property="og:title" content="Il Tempio di Eris — Vairano Patenora">
+    <meta property="og:description" content="Cibo vero. Zero schermi. Stare insieme a tavola nel borgo antico.">
+    <meta property="og:url" content="https://github.io">
     <meta property="og:type" content="website">
 
     <style>
         body {
-            background-color: #4040E0; /* Blu esterno C64 */
+            background-color: #0c0c0c; /* Nero notte profondo */
+            color: #dfd5c6; /* Crema/avorio opaco, elegante e riposante */
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Georgia', 'Times New Roman', serif;
             box-sizing: border-box;
         }
-        .screen {
-            background-color: #2020A0; /* Blu interno C64 */
-            width: 92vw;
-            max-width: 640px;
-            margin: 20px auto;
-            padding: 25px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-            color: #A0A0FF; /* Colore testo C64 */
+        .container {
+            width: 90vw;
+            max-width: 600px;
+            padding: 50px 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 26px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .subtitle {
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            opacity: 0.6;
+            margin-bottom: 40px;
+        }
+        .manifesto {
+            font-size: 16px;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .section-text {
             font-size: 14px;
             line-height: 1.6;
-            font-weight: bold;
-            text-transform: uppercase;
-            box-sizing: border-box;
-            word-wrap: break-word;
+            margin-bottom: 25px;
+            opacity: 0.85;
         }
-        .cursor {
-            background-color: #A0A0FF;
-            animation: blink 1s infinite;
+        .divider {
+            height: 1px;
+            width: 50px;
+            background-color: #dfd5c6;
+            margin: 35px auto;
+            opacity: 0.3;
+        }
+        a.cta-btn {
             display: inline-block;
-            width: 10px;
-            height: 15px;
-            vertical-align: middle;
+            margin-top: 20px;
+            color: #0c0c0c;
+            background-color: #dfd5c6;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 1px solid #dfd5c6;
         }
-        @keyframes blink {
-            0%, 49% { background-color: #A0A0FF; }
-            50%, 100% { background-color: transparent; }
+        a.cta-btn:hover {
+            background-color: #0c0c0c;
+            color: #dfd5c6;
         }
-        a {
-            color: #FFFFFF;
-            text-decoration: underline;
-            cursor: pointer;
+        .social-links {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
-        .cta {
-            margin-top: 25px;
-            display: block;
-            color: #A0A0FF;
+        .social-links a {
+            color: #dfd5c6;
+            text-decoration: none;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(223, 213, 198, 0.3);
+            padding-bottom: 2px;
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #ffffff;
+            border-bottom: 1px solid #ffffff;
         }
         @media (max-width: 480px) {
-            .screen {
-                font-size: 12px;
-                padding: 15px;
-            }
+            h1 { font-size: 22px; }
+            .manifesto { font-size: 14px; }
+            .section-text { font-size: 13px; }
         }
     </style>
 </head>
 <body>
 
-<div class="screen">
-    **** IL TEMPIO DI ERIS — ENCLAVE GASTRONOMICA ****<br>
-    64K RAM SYSTEM  38911 BASIC BYTES FREE<br>
-    <br>
-    READY.<br>
-    10 PRINT "DISCONNESSIONE IN CORSO..."<br>
-    20 PRINT "ABOLIAMO IL MENÙ CARTACEO".<br>
-    30 PRINT "CUCINIAMO A CICLO SOLARE UNICO: DALLA MATTINA ALLA SERA."<br>
-    40 PRINT "UN SIMPOSIO INTIMO PER SOLI 23 OSPITI NEL BORGO ANTICO."<br>
-    50 PRINT "DA NOI SI VIENE PER STACCARE IL TELEFONO E ASCOLTARE UN VINILE."<br>
-    60 PRINT "SE ACCETTI IL NOSTRO CAOS, SEI AMMESSO."<br>
-    70 PRINT "SE HAI FRETTA, NON SIAMO IL POSTO PER TE."<br>
-    80 GOTO 10
-    <br>
-    READY.<br>
-    RUN<br>
-    <br>
-    <span class="cta">PER CHIEDERE L'AMMISSIONE AL TAVOLO: <a href="https://wa.me/393248920702">CLICCA QUI E BUSSA SU WHATSAPP</a></span><br>
-    <br>
-    READY.<br>
-    <span class="cursor"></span>
+<div class="container">
+    <h1>Il Tempio di Eris</h1>
+    <div class="subtitle">Una Casa nel Borgo Antico — Vairano Patenora</div>
+    
+    <div class="manifesto">
+        "Prenditi la responsabilità di un sorriso."
+    </div>
+    
+    <div class="divider"></div>
+    
+    <div class="section-title">L'Accoglienza e la Convivialità</div>
+    <div class="section-text">
+        Abbiamo aperto 23 coperti intimi nel cuore del borgo medievale di Largo San Nicola per fare una cosa semplice: tornare a stare insieme a tavola, cenare senza fretta e ascoltare un buon vinile. Da noi non troverai un menù fisso stampato. Usciamo la mattina a fare la spesa tra i piccoli coltivatori e i produttori locali dell'Alto Casertano, e portiamo in tavola la sera una cena ricca e abbondante dove i profumi del mare sposano la genuinità della terra.
+    </div>
+
+    <div class="section-title">Decidiamo insieme cosa mangiare</div>
+    <div class="section-text">
+        Nessuna incertezza a tavola: il menù della serata viene concordato, personalizzato e comunicato direttamente con te su WhatsApp al momento della prenotazione. Puoi farti un'idea dei nostri piatti e della nostra proposta guardando le foto sul nostro profilo Instagram, ma le portate saranno modellate in base alle tue esigenze, alle tue intolleranze o semplicemente a quello che desideri mangiare.
+    </div>
+
+    <div class="section-title">Prezzo Trasparente</div>
+    <div class="section-text">
+        Proprio perché costruiamo la cena insieme per ogni tavolo, definiamo il prezzo in anticipo quando prenoti. La nostra proposta di riferimento è di 45€ a persona (acqua e coperto inclusi), escluso il vino. Accogliamo solo pochi ospiti a sera per dedicare la massima ospitalità a ognuno. Se hai fretta, non siamo il posto per te.
+    </div>
+    
+    <div class="divider"></div>
+    
+    <a class="cta-btn" href="https://wa.me.">Concorda la tua Cena su WhatsApp</a>
+
+    <div class="social-links">
+        <a href="https://instagram.com" target="_blank">Instagram (Le Foto)</a>
+        <a href="https://instagram.com" target="_blank">TikTok & Video</a>
+        <a href="https://google.com" target="_blank">Come Arrivare (Mappa)</a>
+    </div>
 </div>
 
 </body>
