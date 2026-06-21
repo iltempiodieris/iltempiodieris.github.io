@@ -9,23 +9,18 @@
     <meta name="description" content="Il Tempio di Eris: 23 coperti intimi nel borgo medievale di Vairano Patenora. Cucina fresca della mattina, vinili e convivialità reale. Se hai fretta, non siamo il posto per te.">
     <meta name="keywords" content="Il Tempio di Eris, ristorante Vairano Patenora, pizzerie Caianello, ristorante intimo Caserta, mangiare borgo medievale, cucina espressa alto casertano">
     <meta name="robots" content="index, follow">
-    
-	<!-- Link -->
-	   <div class="social-links">
-        <a href="https://www.instagram.com/iltempiodieris23/" target="_blank">Instagram (Le Foto)</a>
-        <a href="https://www.tiktok.com/@annaipaziageremia" target="_blank">TikTok & Video</a>
-        <a href="https://maps.app.goo.gl/WJKPVAq7nHPagAno6 target="_blank">Come Arrivare (Mappa)</a>
-    </div>
-    
-    <!-- Script goatcounter -->
-    <script data-goatcounter="https://iltempiodieris.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
 
     <!-- Anteprima per WhatsApp e Social -->
     <meta property="og:title" content="Il Tempio di Eris — Vairano Patenora">
     <meta property="og:description" content="Cibo vero. Zero schermi. Stare insieme a tavola nel borgo antico.">
     <meta property="og:url" content="https://github.io">
     <meta property="og:type" content="website">
+
+    <!-- Contatore Visite Anonimo e Invisibile -->
+    <script data-goatcounter="https://goatcounter.com" async src="//gc.zgo.at/count.js"></script>
+
+    <!-- Stile e Script per l'apertura delle immagini ingrandite (Lightbox) -->
+    <link rel="stylesheet" href="https://cloudflare.com">
 
     <style>
         body {
@@ -41,9 +36,9 @@
             box-sizing: border-box;
         }
         .container {
-            width: 90vw;
-            max-width: 600px;
-            padding: 50px 20px;
+            width: 95vw;
+            max-width: 650px;
+            padding: 50px 15px;
             text-align: center;
             box-sizing: border-box;
         }
@@ -60,7 +55,29 @@
             letter-spacing: 3px;
             text-transform: uppercase;
             opacity: 0.6;
-            margin-bottom: 40px;
+            margin-bottom: 25px;
+        }
+        .social-links {
+            margin-top: 10px;
+            margin-bottom: 45px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .social-links a {
+            color: #dfd5c6;
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(223, 213, 198, 0.3);
+            padding-bottom: 2px;
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #ffffff;
+            border-bottom: 1px solid #ffffff;
         }
         .manifesto {
             font-size: 16px;
@@ -74,7 +91,7 @@
             letter-spacing: 2px;
             text-transform: uppercase;
             color: #ffffff;
-            margin-top: 30px;
+            margin-top: 35px;
             margin-bottom: 10px;
             font-weight: bold;
         }
@@ -91,9 +108,37 @@
             margin: 35px auto;
             opacity: 0.3;
         }
+        
+        /* GRIGLIA FOTOGRAFICA COMPATTA IN BASSO */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 colonne su PC */
+            gap: 8px; 
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .photo-grid a {
+            display: block;
+            width: 100%;
+            aspect-ratio: 1 / 1; 
+            overflow: hidden;
+            border: 1px solid rgba(223, 213, 198, 0.15);
+        }
+        .photo-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            filter: grayscale(20%); 
+            transition: all 0.3s ease;
+        }
+        .photo-grid img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.05); 
+        }
+
         a.cta-btn {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 35px;
             color: #0c0c0c;
             background-color: #dfd5c6;
             text-decoration: none;
@@ -109,28 +154,9 @@
             background-color: #0c0c0c;
             color: #dfd5c6;
         }
-        .social-links {
-            margin-top: 40px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .social-links a {
-            color: #dfd5c6;
-            text-decoration: none;
-            font-size: 12px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            border-bottom: 1px solid rgba(223, 213, 198, 0.3);
-            padding-bottom: 2px;
-            transition: all 0.3s ease;
-        }
-        .social-links a:hover {
-            color: #ffffff;
-            border-bottom: 1px solid #ffffff;
-        }
-        @media (max-width: 480px) {
+        
+        @media (max-width: 550px) {
+            .photo-grid { grid-template-columns: repeat(3, 1fr); } /* 3 colonne su smartphone */
             h1 { font-size: 22px; }
             .manifesto { font-size: 14px; }
             .section-text { font-size: 13px; }
@@ -143,6 +169,13 @@
     <h1>Il Tempio di Eris</h1>
     <div class="subtitle">Una Casa nel Borgo Antico — Vairano Patenora</div>
     
+    <!-- LINK UTILI IN ALTO CENTRATI -->
+    <div class="social-links">
+        <a href="https://www.instagram.com/iltempiodieris23/" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@annaipaziageremia" target="_blank">TikTok & Video</a>
+        <a href="<a href="https://google.com" target="_blank">Come Arrivare (Mappa)</a>" target="_blank">Come Arrivare (Mappa)</a>
+    </div>
+
     <div class="manifesto">
         "Prenditi la responsabilità di un sorriso."
     </div>
@@ -151,31 +184,50 @@
     
     <div class="section-title">L'Accoglienza e la Convivialità</div>
     <div class="section-text">
-        Abbiamo aperto 23 coperti intimi nel cuore del borgo medievale di Vairano Patenora (CE) per fare una cosa semplice: tornare a stare insieme a tavola, cenare senza fretta e ascoltare un buon vinile. Da noi non troverai un menù fisso stampato. Usciamo la mattina a fare la spesa tra i piccoli coltivatori e i produttori locali dell'Alto Casertano, e portiamo in tavola la sera una cena ricca e abbondante dove i profumi del mare sposano la genuinità della terra.
+        Abbiamo aperto 23 coperti intimi nel cuore del borgo medievale per fare una cosa semplice: tornare a stare insieme a tavola, cenare senza fretta e ascoltare un buon vinile. Da noi non troverai un menù fisso stampato. Usciamo la mattina a fare the spesa tra i piccoli coltivatori e i produttori locali dell'Alto Casertano, e portiamo in tavola la sera una cena ricca e abbondante dove i profumi del mare sposano la genuinità della terra.
     </div>
-     
+
     <div class="section-title">Decidiamo insieme cosa mangiare</div>
     <div class="section-text">
-        Nessuna incertezza a tavola: il menù della serata viene concordato, personalizzato e comunicato direttamente con te su WhatsApp al momento della prenotazione. Puoi farti un'idea dei nostri piatti e della nostra proposta guardando le foto sul nostro profilo Instagram, ma le portate saranno modellate in base alle tue esigenze, alle tue intolleranze o semplicemente a quello che desideri mangiare.
+        Nessuna incertezza a tavola: il menù della serata viene concordato, personalizzato e comunicato direttamente con te su WhatsApp al momento della prenotazione. Puoi farti un'idea della consistenza dei nostri piatti guardando le nostre foto qui sotto, cliccandoci sopra per ingrandirle, ma le portate saranno modellate in base alle tue esigenze, alle tue intolleranze o semplicemente a quello che desideri mangiare.
     </div>
 
     <div class="section-title">Dove Siamo e Quando Venire</div>
     <div class="section-text">
-        Ci trovi a <strong>Via San Nicola, 25, nel cuore del Borgo Medievale di Vairano Patenora (Caserta)</strong>, a pochissimi minuti dall'uscita autostradale di Caianello.<br><br>
+        Ci trovi a <strong>Largo San Nicola, nel cuore del Borgo Medievale di Vairano Patenora (Caserta)</strong>, a pochissimi minuti dall'uscita autostradale di Caianello.<br><br>
         Non abbiamo giorni di apertura fissi o turni standard. <strong>Siamo aperti esclusivamente su prenotazione (sia a pranzo che a cena), con un preavviso minimo di 24 ore.</strong><br><br>
         Se decidi di sederti alla nostra tavola, compriamo le materie prime la mattina stessa per cucinare espressamente per il tuo tavolo. Per questo motivo, abbiamo bisogno di tempo.
     </div>
-    
+
     <div class="section-title">Prezzo Trasparente</div>
     <div class="section-text">
-        Proprio perché costruiamo la cena insieme per ogni tavolo, definiamo il prezzo in anticipo quando prenoti. La nostra proposta di riferimento è di 45€ a persona vino escluso. Accogliamo solo pochi ospiti a sera per dedicare la massima ospitalità a ognuno. Se hai fretta, non siamo il posto per te.
+        Proprio perché costruiamo la cena insieme per ogni tavolo, definiamo il prezzo in anticipo quando prenoti. La nostra proposta di riferimento parte da 45€ a persona (acqua e coperto inclusi), escluso il vino. Accogliamo solo pochi ospiti a sera per dedicare la massima ospitalità a ognuno. Se hai fretta, non siamo il posto per te.
+    </div>
+
+    <!-- GRIGLIA FOTOGRAFICA INTEGRATA IN BASSO CON EFFETTO ZOOM -->
+    <div class="photo-grid">
+        <a href="foto1.jpg" data-lightbox="gallery"><img src="foto1.jpg" alt="Il Tempio di Eris"></a>
+        <a href="foto2.jpg" data-lightbox="gallery"><img src="foto2.jpg" alt="Il Tempio di Eris"></a>
+        <a href="foto3.jpg" data-lightbox="gallery"><img src="foto3.jpg" alt="Il Tempio di Eris"></a>
+        <a href="foto4.jpg" data-lightbox="gallery"><img src="foto4.jpg" alt="Il Tempio di Eris"></a>
+        <a href="foto5.jpg" data-lightbox="gallery"><img src="foto5.jpg" alt="Il Tempio di Eris"></a>
     </div>
     
     <div class="divider"></div>
     
     <a class="cta-btn" href="https://wa.me/3248920702">Concorda la tua Cena su WhatsApp</a>
+</div>
 
-   </div>
+<!-- Script Lightbox alla fine per attivare lo zoom -->
+<script src="https://cloudflare.com"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'albumLabel': "Foto %1 di %2",
+      'fadeDuration': 200
+    })
+</script>
 
 </body>
 </html>
